@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin registeration</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div id="header">
+        <img class="college-logo" src="https://upload.wikimedia.org/wikipedia/en/c/c5/JSSATE_Noida.png" alt="college-logo">
+        <div class="college-name">
+            <h1>JSS</h1>
+            <p>Academy of Technical Education</p>
+        </div>        
+    </div>
+    <div class="registeration">
+        <h2>Register admin</h2>
+        <form action="/register" method="post">
+            <input type="email" placeholder="example@123" name="email"><br>
+            <input type="password" placeholder="Password" name="password"><br>
+            <% if(locals.message){%>
+                <p><%= message %></p>
+            <%}%>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Copyright © JSSATE_Noida</p>
+    </div>
+</body>
+</html>
